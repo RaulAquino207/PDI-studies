@@ -1,7 +1,7 @@
 I = imread('licoln_from_penny.tif');
 imshow(I);
 se = strel("square", 3);
-I2 = erode(I, se);]
+I2 = imerode(I, se);
 imshow(I2);
 I3 = I - I2;
 imshow(I3);
